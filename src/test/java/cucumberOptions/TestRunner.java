@@ -9,8 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(  
 	    features = "src/test/java/features",
 	    glue="stepDefinations",
-	    //tags = "@PortalTest or @SmokeTest or @SanityTest or @RegTest",
-	    tags = "@MobileTest",
+	    tags = "@PortalTest or @SmokeTest or @SanityTest or @RegTest",
+	    //tags = "@MobileTest",
 	    monochrome=true,
 	    plugin= {"pretty","html:target/cucumber.html"})
 public class TestRunner {
